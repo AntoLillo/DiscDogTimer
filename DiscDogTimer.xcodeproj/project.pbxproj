@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA8283011AF00686008EF3AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8283001AF00686008EF3AA /* Foundation.framework */; };
+		FA8283031AF00686008EF3AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8283021AF00686008EF3AA /* CoreGraphics.framework */; };
+		FA8283051AF00686008EF3AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8283041AF00686008EF3AA /* UIKit.framework */; };
+		FA82830B1AF00686008EF3AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA8283091AF00686008EF3AA /* InfoPlist.strings */; };
+		FA82830D1AF00686008EF3AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA82830C1AF00686008EF3AA /* main.m */; };
+		FA8283111AF00686008EF3AA /* DDTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8283101AF00686008EF3AA /* DDTAppDelegate.m */; };
+		FA8283141AF00686008EF3AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8283121AF00686008EF3AA /* Main.storyboard */; };
+		FA8283171AF00686008EF3AA /* DDTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8283161AF00686008EF3AA /* DDTViewController.m */; };
+		FA8283191AF00686008EF3AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8283181AF00686008EF3AA /* Images.xcassets */; };
+		FA8283201AF00686008EF3AA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA82831F1AF00686008EF3AA /* XCTest.framework */; };
+		FA8283211AF00686008EF3AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8283001AF00686008EF3AA /* Foundation.framework */; };
+		FA8283221AF00686008EF3AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8283041AF00686008EF3AA /* UIKit.framework */; };
+		FA82832A1AF00686008EF3AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA8283281AF00686008EF3AA /* InfoPlist.strings */; };
+		FA82832C1AF00686008EF3AA /* DiscDogTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA82832B1AF00686008EF3AA /* DiscDogTimerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA8283231AF00686008EF3AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA8282F51AF00686008EF3AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA8282FC1AF00686008EF3AA;
+			remoteInfo = DiscDogTimer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA8282FD1AF00686008EF3AA /* DiscDogTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscDogTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA8283001AF00686008EF3AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA8283021AF00686008EF3AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FA8283041AF00686008EF3AA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FA8283081AF00686008EF3AA /* DiscDogTimer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiscDogTimer-Info.plist"; sourceTree = "<group>"; };
+		FA82830A1AF00686008EF3AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA82830C1AF00686008EF3AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA82830E1AF00686008EF3AA /* DiscDogTimer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DiscDogTimer-Prefix.pch"; sourceTree = "<group>"; };
+		FA82830F1AF00686008EF3AA /* DDTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDTAppDelegate.h; sourceTree = "<group>"; };
+		FA8283101AF00686008EF3AA /* DDTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDTAppDelegate.m; sourceTree = "<group>"; };
+		FA8283131AF00686008EF3AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA8283151AF00686008EF3AA /* DDTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDTViewController.h; sourceTree = "<group>"; };
+		FA8283161AF00686008EF3AA /* DDTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDTViewController.m; sourceTree = "<group>"; };
+		FA8283181AF00686008EF3AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FA82831E1AF00686008EF3AA /* DiscDogTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscDogTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA82831F1AF00686008EF3AA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FA8283271AF00686008EF3AA /* DiscDogTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiscDogTimerTests-Info.plist"; sourceTree = "<group>"; };
+		FA8283291AF00686008EF3AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA82832B1AF00686008EF3AA /* DiscDogTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscDogTimerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA8282FA1AF00686008EF3AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8283031AF00686008EF3AA /* CoreGraphics.framework in Frameworks */,
+				FA8283051AF00686008EF3AA /* UIKit.framework in Frameworks */,
+				FA8283011AF00686008EF3AA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA82831B1AF00686008EF3AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8283201AF00686008EF3AA /* XCTest.framework in Frameworks */,
+				FA8283221AF00686008EF3AA /* UIKit.framework in Frameworks */,
+				FA8283211AF00686008EF3AA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA8282F41AF00686008EF3AA = {
+			isa = PBXGroup;
+			children = (
+				FA8283061AF00686008EF3AA /* DiscDogTimer */,
+				FA8283251AF00686008EF3AA /* DiscDogTimerTests */,
+				FA8282FF1AF00686008EF3AA /* Frameworks */,
+				FA8282FE1AF00686008EF3AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA8282FE1AF00686008EF3AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA8282FD1AF00686008EF3AA /* DiscDogTimer.app */,
+				FA82831E1AF00686008EF3AA /* DiscDogTimerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA8282FF1AF00686008EF3AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA8283001AF00686008EF3AA /* Foundation.framework */,
+				FA8283021AF00686008EF3AA /* CoreGraphics.framework */,
+				FA8283041AF00686008EF3AA /* UIKit.framework */,
+				FA82831F1AF00686008EF3AA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA8283061AF00686008EF3AA /* DiscDogTimer */ = {
+			isa = PBXGroup;
+			children = (
+				FA82830F1AF00686008EF3AA /* DDTAppDelegate.h */,
+				FA8283101AF00686008EF3AA /* DDTAppDelegate.m */,
+				FA8283121AF00686008EF3AA /* Main.storyboard */,
+				FA8283151AF00686008EF3AA /* DDTViewController.h */,
+				FA8283161AF00686008EF3AA /* DDTViewController.m */,
+				FA8283181AF00686008EF3AA /* Images.xcassets */,
+				FA8283071AF00686008EF3AA /* Supporting Files */,
+			);
+			path = DiscDogTimer;
+			sourceTree = "<group>";
+		};
+		FA8283071AF00686008EF3AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA8283081AF00686008EF3AA /* DiscDogTimer-Info.plist */,
+				FA8283091AF00686008EF3AA /* InfoPlist.strings */,
+				FA82830C1AF00686008EF3AA /* main.m */,
+				FA82830E1AF00686008EF3AA /* DiscDogTimer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA8283251AF00686008EF3AA /* DiscDogTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA82832B1AF00686008EF3AA /* DiscDogTimerTests.m */,
+				FA8283261AF00686008EF3AA /* Supporting Files */,
+			);
+			path = DiscDogTimerTests;
+			sourceTree = "<group>";
+		};
+		FA8283261AF00686008EF3AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA8283271AF00686008EF3AA /* DiscDogTimerTests-Info.plist */,
+				FA8283281AF00686008EF3AA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA8282FC1AF00686008EF3AA /* DiscDogTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA82832F1AF00686008EF3AA /* Build configuration list for PBXNativeTarget "DiscDogTimer" */;
+			buildPhases = (
+				FA8282F91AF00686008EF3AA /* Sources */,
+				FA8282FA1AF00686008EF3AA /* Frameworks */,
+				FA8282FB1AF00686008EF3AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiscDogTimer;
+			productName = DiscDogTimer;
+			productReference = FA8282FD1AF00686008EF3AA /* DiscDogTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA82831D1AF00686008EF3AA /* DiscDogTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA8283321AF00686008EF3AA /* Build configuration list for PBXNativeTarget "DiscDogTimerTests" */;
+			buildPhases = (
+				FA82831A1AF00686008EF3AA /* Sources */,
+				FA82831B1AF00686008EF3AA /* Frameworks */,
+				FA82831C1AF00686008EF3AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA8283241AF00686008EF3AA /* PBXTargetDependency */,
+			);
+			name = DiscDogTimerTests;
+			productName = DiscDogTimerTests;
+			productReference = FA82831E1AF00686008EF3AA /* DiscDogTimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA8282F51AF00686008EF3AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DDT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = MacShark;
+				TargetAttributes = {
+					FA82831D1AF00686008EF3AA = {
+						TestTargetID = FA8282FC1AF00686008EF3AA;
+					};
+				};
+			};
+			buildConfigurationList = FA8282F81AF00686008EF3AA /* Build configuration list for PBXProject "DiscDogTimer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA8282F41AF00686008EF3AA;
+			productRefGroup = FA8282FE1AF00686008EF3AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA8282FC1AF00686008EF3AA /* DiscDogTimer */,
+				FA82831D1AF00686008EF3AA /* DiscDogTimerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA8282FB1AF00686008EF3AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8283191AF00686008EF3AA /* Images.xcassets in Resources */,
+				FA82830B1AF00686008EF3AA /* InfoPlist.strings in Resources */,
+				FA8283141AF00686008EF3AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA82831C1AF00686008EF3AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA82832A1AF00686008EF3AA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA8282F91AF00686008EF3AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA82830D1AF00686008EF3AA /* main.m in Sources */,
+				FA8283171AF00686008EF3AA /* DDTViewController.m in Sources */,
+				FA8283111AF00686008EF3AA /* DDTAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA82831A1AF00686008EF3AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA82832C1AF00686008EF3AA /* DiscDogTimerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA8283241AF00686008EF3AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA8282FC1AF00686008EF3AA /* DiscDogTimer */;
+			targetProxy = FA8283231AF00686008EF3AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA8283091AF00686008EF3AA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA82830A1AF00686008EF3AA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FA8283121AF00686008EF3AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA8283131AF00686008EF3AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA8283281AF00686008EF3AA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA8283291AF00686008EF3AA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA82832D1AF00686008EF3AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FA82832E1AF00686008EF3AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA8283301AF00686008EF3AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DiscDogTimer/DiscDogTimer-Prefix.pch";
+				INFOPLIST_FILE = "DiscDogTimer/DiscDogTimer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FA8283311AF00686008EF3AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DiscDogTimer/DiscDogTimer-Prefix.pch";
+				INFOPLIST_FILE = "DiscDogTimer/DiscDogTimer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FA8283331AF00686008EF3AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DiscDogTimer.app/DiscDogTimer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DiscDogTimer/DiscDogTimer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DiscDogTimerTests/DiscDogTimerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FA8283341AF00686008EF3AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DiscDogTimer.app/DiscDogTimer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DiscDogTimer/DiscDogTimer-Prefix.pch";
+				INFOPLIST_FILE = "DiscDogTimerTests/DiscDogTimerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA8282F81AF00686008EF3AA /* Build configuration list for PBXProject "DiscDogTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA82832D1AF00686008EF3AA /* Debug */,
+				FA82832E1AF00686008EF3AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA82832F1AF00686008EF3AA /* Build configuration list for PBXNativeTarget "DiscDogTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA8283301AF00686008EF3AA /* Debug */,
+				FA8283311AF00686008EF3AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FA8283321AF00686008EF3AA /* Build configuration list for PBXNativeTarget "DiscDogTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA8283331AF00686008EF3AA /* Debug */,
+				FA8283341AF00686008EF3AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA8282F51AF00686008EF3AA /* Project object */;
+}
