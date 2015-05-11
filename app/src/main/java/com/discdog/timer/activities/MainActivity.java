@@ -1,4 +1,4 @@
-package com.discdog.timer;
+package com.discdog.timer.activities;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -12,6 +12,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.discdog.timer.R;
+import com.discdog.timer.fragments.CreditsFragment;
+import com.discdog.timer.fragments.HomeFragment;
+import com.discdog.timer.fragments.NavigationDrawerFragment;
+import com.discdog.timer.fragments.RulesFragment;
+import com.discdog.timer.fragments.TimersFragment;
 
 
 public class MainActivity extends ActionBarActivity
@@ -47,7 +54,7 @@ public class MainActivity extends ActionBarActivity
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                .replace(R.id.container, ParentFragment.newInstance(position + 1))
                 .commit();
     }
 
@@ -61,6 +68,9 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 3:
                 mTitle = getString(R.string.title_section3);
+                break;
+            case 4:
+                mTitle = getString(R.string.title_section4);
                 break;
         }
     }
@@ -104,7 +114,7 @@ public class MainActivity extends ActionBarActivity
     /**
      * A placeholder fragment containing a simple view.
      */
-    public static class PlaceholderFragment extends Fragment {
+    public static class ParentFragment extends Fragment {
         /**
          * The fragment argument representing the section number for this
          * fragment.
@@ -115,15 +125,32 @@ public class MainActivity extends ActionBarActivity
          * Returns a new instance of this fragment for the given section
          * number.
          */
-        public static PlaceholderFragment newInstance(int sectionNumber) {
-            PlaceholderFragment fragment = new PlaceholderFragment();
+        public static ParentFragment newInstance(int sectionNumber) {
+            ParentFragment fragment = null;
+            switch (sectionNumber){
+                case 1:
+                    fragment = new HomeFragment();
+                    break;
+                case 2:
+                    fragment = new TimersFragment();
+                    break;
+                case 3:
+                    fragment = new RulesFragment();
+                    break;
+                case 4:
+                    fragment = new CreditsFragment();
+                    break;
+                default:
+                    fragment = new ParentFragment();
+                    break;
+            }
             Bundle args = new Bundle();
             args.putInt(ARG_SECTION_NUMBER, sectionNumber);
             fragment.setArguments(args);
             return fragment;
         }
 
-        public PlaceholderFragment() {
+        public ParentFragment() {
         }
 
         @Override
@@ -140,5 +167,4 @@ public class MainActivity extends ActionBarActivity
                     getArguments().getInt(ARG_SECTION_NUMBER));
         }
     }
-
 }
