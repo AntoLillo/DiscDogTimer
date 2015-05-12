@@ -1,5 +1,5 @@
 //
-//  DDTViewController.h
+//  DDTCreditsViewController.h
 //  DiscDogTimer
 //
 //  Created by MacShark on 28/04/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DDTViewController : UIViewController
+@interface DDTCreditsViewController : UIViewController
 
 @end

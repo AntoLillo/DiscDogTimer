@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA59F8031B02828500B510EB /* DDTSelectTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59F8021B02828500B510EB /* DDTSelectTimerViewController.m */; };
+		FA59F8061B02838E00B510EB /* DDTSelectRulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59F8051B02838E00B510EB /* DDTSelectRulesViewController.m */; };
 		FA8283011AF00686008EF3AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8283001AF00686008EF3AA /* Foundation.framework */; };
 		FA8283031AF00686008EF3AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8283021AF00686008EF3AA /* CoreGraphics.framework */; };
 		FA8283051AF00686008EF3AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8283041AF00686008EF3AA /* UIKit.framework */; };
@@ -14,13 +16,16 @@
 		FA82830D1AF00686008EF3AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA82830C1AF00686008EF3AA /* main.m */; };
 		FA8283111AF00686008EF3AA /* DDTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8283101AF00686008EF3AA /* DDTAppDelegate.m */; };
 		FA8283141AF00686008EF3AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8283121AF00686008EF3AA /* Main.storyboard */; };
-		FA8283171AF00686008EF3AA /* DDTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8283161AF00686008EF3AA /* DDTViewController.m */; };
+		FA8283171AF00686008EF3AA /* DDTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8283161AF00686008EF3AA /* DDTMainViewController.m */; };
 		FA8283191AF00686008EF3AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8283181AF00686008EF3AA /* Images.xcassets */; };
 		FA8283201AF00686008EF3AA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA82831F1AF00686008EF3AA /* XCTest.framework */; };
 		FA8283211AF00686008EF3AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8283001AF00686008EF3AA /* Foundation.framework */; };
 		FA8283221AF00686008EF3AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8283041AF00686008EF3AA /* UIKit.framework */; };
 		FA82832A1AF00686008EF3AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA8283281AF00686008EF3AA /* InfoPlist.strings */; };
 		FA82832C1AF00686008EF3AA /* DiscDogTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA82832B1AF00686008EF3AA /* DiscDogTimerTests.m */; };
+		FA82833B1AF0156A008EF3AA /* DDTTimersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA82833A1AF0156A008EF3AA /* DDTTimersViewController.m */; };
+		FA82833F1AF0158E008EF3AA /* DDTRulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA82833E1AF0158E008EF3AA /* DDTRulesViewController.m */; };
+		FA8283421AF01598008EF3AA /* DDTCreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8283411AF01598008EF3AA /* DDTCreditsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA59F8011B02828500B510EB /* DDTSelectTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTSelectTimerViewController.h; sourceTree = "<group>"; };
+		FA59F8021B02828500B510EB /* DDTSelectTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTSelectTimerViewController.m; sourceTree = "<group>"; };
+		FA59F8041B02838D00B510EB /* DDTSelectRulesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTSelectRulesViewController.h; sourceTree = "<group>"; };
+		FA59F8051B02838E00B510EB /* DDTSelectRulesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTSelectRulesViewController.m; sourceTree = "<group>"; };
 		FA8282FD1AF00686008EF3AA /* DiscDogTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscDogTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8283001AF00686008EF3AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FA8283021AF00686008EF3AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +54,20 @@
 		FA82830F1AF00686008EF3AA /* DDTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDTAppDelegate.h; sourceTree = "<group>"; };
 		FA8283101AF00686008EF3AA /* DDTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDTAppDelegate.m; sourceTree = "<group>"; };
 		FA8283131AF00686008EF3AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FA8283151AF00686008EF3AA /* DDTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDTViewController.h; sourceTree = "<group>"; };
-		FA8283161AF00686008EF3AA /* DDTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDTViewController.m; sourceTree = "<group>"; };
+		FA8283151AF00686008EF3AA /* DDTMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDTMainViewController.h; sourceTree = "<group>"; };
+		FA8283161AF00686008EF3AA /* DDTMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDTMainViewController.m; sourceTree = "<group>"; };
 		FA8283181AF00686008EF3AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FA82831E1AF00686008EF3AA /* DiscDogTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscDogTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA82831F1AF00686008EF3AA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FA8283271AF00686008EF3AA /* DiscDogTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiscDogTimerTests-Info.plist"; sourceTree = "<group>"; };
 		FA8283291AF00686008EF3AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FA82832B1AF00686008EF3AA /* DiscDogTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscDogTimerTests.m; sourceTree = "<group>"; };
+		FA8283391AF0156A008EF3AA /* DDTTimersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTimersViewController.h; sourceTree = "<group>"; };
+		FA82833A1AF0156A008EF3AA /* DDTTimersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTimersViewController.m; sourceTree = "<group>"; };
+		FA82833D1AF0158E008EF3AA /* DDTRulesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTRulesViewController.h; sourceTree = "<group>"; };
+		FA82833E1AF0158E008EF3AA /* DDTRulesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTRulesViewController.m; sourceTree = "<group>"; };
+		FA8283401AF01598008EF3AA /* DDTCreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTCreditsViewController.h; sourceTree = "<group>"; };
+		FA8283411AF01598008EF3AA /* DDTCreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTCreditsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +127,11 @@
 		FA8283061AF00686008EF3AA /* DiscDogTimer */ = {
 			isa = PBXGroup;
 			children = (
+				FA82833C1AF01572008EF3AA /* Controllers */,
+				FA8283351AF00FE1008EF3AA /* Helper */,
 				FA82830F1AF00686008EF3AA /* DDTAppDelegate.h */,
 				FA8283101AF00686008EF3AA /* DDTAppDelegate.m */,
 				FA8283121AF00686008EF3AA /* Main.storyboard */,
-				FA8283151AF00686008EF3AA /* DDTViewController.h */,
-				FA8283161AF00686008EF3AA /* DDTViewController.m */,
 				FA8283181AF00686008EF3AA /* Images.xcassets */,
 				FA8283071AF00686008EF3AA /* Supporting Files */,
 			);
@@ -150,6 +165,32 @@
 				FA8283281AF00686008EF3AA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA8283351AF00FE1008EF3AA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		FA82833C1AF01572008EF3AA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA8283391AF0156A008EF3AA /* DDTTimersViewController.h */,
+				FA82833A1AF0156A008EF3AA /* DDTTimersViewController.m */,
+				FA8283151AF00686008EF3AA /* DDTMainViewController.h */,
+				FA8283161AF00686008EF3AA /* DDTMainViewController.m */,
+				FA82833D1AF0158E008EF3AA /* DDTRulesViewController.h */,
+				FA82833E1AF0158E008EF3AA /* DDTRulesViewController.m */,
+				FA8283401AF01598008EF3AA /* DDTCreditsViewController.h */,
+				FA8283411AF01598008EF3AA /* DDTCreditsViewController.m */,
+				FA59F8011B02828500B510EB /* DDTSelectTimerViewController.h */,
+				FA59F8021B02828500B510EB /* DDTSelectTimerViewController.m */,
+				FA59F8041B02838D00B510EB /* DDTSelectRulesViewController.h */,
+				FA59F8051B02838E00B510EB /* DDTSelectRulesViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +291,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA82833B1AF0156A008EF3AA /* DDTTimersViewController.m in Sources */,
+				FA82833F1AF0158E008EF3AA /* DDTRulesViewController.m in Sources */,
 				FA82830D1AF00686008EF3AA /* main.m in Sources */,
-				FA8283171AF00686008EF3AA /* DDTViewController.m in Sources */,
+				FA8283171AF00686008EF3AA /* DDTMainViewController.m in Sources */,
+				FA8283421AF01598008EF3AA /* DDTCreditsViewController.m in Sources */,
+				FA59F8031B02828500B510EB /* DDTSelectTimerViewController.m in Sources */,
 				FA8283111AF00686008EF3AA /* DDTAppDelegate.m in Sources */,
+				FA59F8061B02838E00B510EB /* DDTSelectRulesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +503,7 @@
 				FA8283311AF00686008EF3AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA8283321AF00686008EF3AA /* Build configuration list for PBXNativeTarget "DiscDogTimerTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +512,7 @@
 				FA8283341AF00686008EF3AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
